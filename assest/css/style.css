@@ -1,0 +1,606 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+
+/* offcanvas section start */
+ 
+.offcanvas .offcanvas-header{
+    background-color: #FF006F;
+        
+
+}
+
+/* Custom Offcanvas Styles */
+.bg-pink {
+    background-color: #ff007a; /* Pink color like the one in the screenshot */
+}
+
+.navbar-toggler {
+    border: none; /* Hide border for the menu icon */
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.btn-light {
+    color: #ff007a;
+    font-weight: bold;
+}
+ 
+.offcanvas-body {
+    padding-top: 4rem; /* Adjust padding to position the links correctly */
+    background-color: #FF006F;
+}
+
+.btn-close-white {
+    filter: invert(1); /* White close button */
+}
+
+/* Align the icon and text properly */
+.navbar-brand img {
+    height: auto;
+    width: 120px;
+}
+
+.offcanvas-header {
+    justify-content: flex-end;
+}
+
+.navbar {
+    box-shadow: none;
+}
+
+/* offcanvas section end */
+
+
+/* NAV SECTION START */
+ 
+.nav-item .bg-pink{
+    background-color: #FF006F;
+}
+
+.navbar-toggler{
+
+    display: flex;
+    cursor: pointer;
+}
+
+.nav-item .btn{
+    padding: 12px 40px;
+    color: white;
+    margin-left: 100px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+#btn1:hover{
+    transform: scale(1.1);
+    background-color: #FF006F;
+    color: aliceblue;
+}
+ 
+#banner ul li a{
+    color: white;
+    font-size:17px ;
+    font-weight:700 ;
+    padding-left: 30px;
+}
+#banner .navbar{
+    transition: all 1s;
+}
+#banner .navbar-brand img{
+        transition: all 1s;
+} 
+ 
+.scroll-down{
+    background-color:white;
+    padding: 0;
+}
+.scroll-down .navbar-brand img{
+    width: 80px;
+    }
+
+#banner .scroll-down ul li .nav-link{
+        color: black;
+}  
+
+
+
+.nav-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px; /* Space between text and border */
+    display: inline-block; /* Ensures the link width matches the text */
+    
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px; /* Thickness of the pink border */
+    background-color: #ff007f; /* Pink color */
+    transition:0.5s; /* Smooth transition */
+    box-sizing: border-box; /* Ensure it calculates width and padding correctly */
+}
+
+.nav-link:hover::after {
+
+    width: calc(100% - 39px); /* Adjust width to exclude the padding */
+    left: 30px; /* Offset the starting position to account for padding */
+}
+
+.nav-link:hover {
+    color: #ff007f; /* Optional: Change text color on hover */
+}
+
+
+
+
+
+
+
+
+/* NAV SECTION END */
+
+/* .carousel-item   .w-100{
+   height: 100vh;
+} */
+
+.carousel-item .h2{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.carousel-item .carousel-caption p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+.carousel-caption p a{
+    color: white;
+    transition: all 0.4s;
+ }
+.carousel-caption p a:hover{
+    color: #FF006F;
+}
+#carousel1{
+    left: 220px;
+    top: 100px;
+}
+
+#carousel2{
+   left: 800px;
+    top: 150px;
+    text-align: left;
+}
+#carousel3{
+    left: 250px;
+    top: 150px;
+     text-align: left;
+ }
+
+#arrow{
+    animation: cnc 0.8s ease-in-out infinite alternate-reverse ;
+} 
+@keyframes cnc {
+
+    0%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: 40px;
+    }
+    
+}
+
+
+/* sweiper section start */
+#swiper{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    
+    
+}
+#swiper .slider-wraper{
+    max-width: auto ;
+    margin: 0px auto;
+     
+    
+}
+ 
+#swiper .slider-wraper .card-list .card-item{
+
+    padding: 20px;
+    text-align: center;
+     margin: 20px 0px;
+}
+#swiper .slider-wraper .card-list .card-item img{
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: all 0.5s;
+}
+#swiper .slider-wraper .card-list .card-item img:hover{
+     
+    filter: grayscale(0%);
+}
+
+#swiper .slider-wraper .button-swiper{
+    display: none;
+}
+/* sweiper section end */
+
+/* cravefx section start */
+
+.cravefx{
+    background-color: #ED009C;
+}
+/* .cravefx .content .h2{
+     color: yellow;
+    font-size: 80px;
+    font-weight: bold;
+
+} it's not working */
+.cravefx .content p{
+    color: white;
+   font-size: 30px;
+   font-weight: 400;
+   margin-left: -40px;
+
+}
+
+/* cravefx section end */
+
+/* latest section start */
+.latest{
+    background: yellow;
+     
+}
+/* .latest .himg .h2{
+    font-size: 40px;
+    color: white;
+}  it's not working */
+
+.latest .btn {
+    padding: 12px 40px;
+    font-weight: 500;
+    color: white;
+    border-radius: 50px;
+    transition: all 0.5s;
+    background: blue;
+}
+.latest .btn:hover{
+    transform: scale(1.1);
+    background: blue;
+}
+.latest .himg{
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.latest .himg img{
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+.latest .himg .content{
+    position: absolute;
+    bottom:0px ;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+.latest .himg:hover img{
+    transform: scale(1.15);
+}
+.latest .himg:hover .content{
+    background: linear-gradient(rgba(0, 0, 0,0.5),rgba(2,
+    2, 2,0.5));
+}
+    
+/* latest section end */
+
+/* imagination section start */
+.imagination h1{
+    color: #FF006F;
+    font-size: 60px;
+    font-weight: 800;
+}
+.imagination p{
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+}
+.imagination .btn{
+    border: 2px solid #FF006F;
+    border-radius: 50px;
+    color: #FF006F;
+    font-size: 15px;
+    font-weight: 700;
+    width: 190px;
+    transition: all 0.1s;
+   
+}
+.imagination .btn:hover{
+    transform: scaley(1.1);
+    border: 2px solid #FF006F;
+    
+    color: #FF006F;
+}
+/* imagination section end */
+
+/* animation section start */
+.bg-pink {
+    background-color: #FF006F;
+    }
+.bg-yellow{
+    background-color: #FFFF00;
+}
+.bg-blue {
+    background-color: #202EF7;
+}
+    
+.animation .box{
+    border-radius: 20px;
+    padding: 50px 40px 40px 40px;
+    font-size: 18px;
+    transition: all 0.3s;
+    }
+.animation .box:hover{
+    transform: scale(1.1);
+}
+/* animation section end */
+
+/* highlights sectioin start */
+ 
+#highlights #blog{
+    overflow: hidden;
+    height: 370px;
+    position: relative;
+}
+#highlights #blog img{
+    
+    transition: all 0.4s;
+}
+#highlights #blog .button{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(43, 36, 36, 0.6),rgba(0, 0, 0,0.6));
+    padding: 20px;
+}
+#highlights #blog .button button{
+    border: 2px solid rgb(128, 126, 126);
+    border-radius: 5px;
+    padding: 3px 10px;
+    background-color: transparent;
+}
+#highlights #blog .button button:hover{
+    background-color: #FF006F;
+    border: 2px solid #FF006F;
+}
+#highlights #blog .content{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    padding: 40px 30px;
+    font-size: 18px;
+}
+#highlights #blog:hover img{
+    transform: scale(1.1);
+}
+
+#btn2{
+    padding: 12px 40px;
+    font-weight: 500;
+     color: aliceblue;
+    border-radius: 50px;
+    transition: all 0.5s;
+    background-color: #202EF7;
+}
+    
+#btn2:hover{
+    transform: translateY(-10px);
+    background-color: #202EF7;
+    color: white;
+    box-shadow: 0px 10px 50px rgb(156, 155, 155);
+}
+    
+/* highlights sectioin end */
+
+/* colloborate section start */
+
+
+
+.collaborate{
+     
+    background: url('../images/footer-bg-min.png') fixed no-repeat;
+     
+     
+}
+ 
+.collaborate p{
+     
+     
+     font-weight: 900; 
+    color: white;
+    
+}
+.collaborate h1{
+    font-size: 65px;
+    color: yellow;
+    text-shadow: 5px 5px 5px blue;
+}
+ 
+.collaborate button:hover{
+    transform: scaley(1.1);
+}
+
+/* colloborate section end */
+
+/* footer section start */
+footer{
+    
+    line-height: 35px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+footer ul li{
+
+     list-style: none;
+     margin-left: -30px;
+}
+footer #menu{
+    color: #FB006F;
+} 
+footer #capb{
+    color: #2626c9;
+} 
+footer #case{
+    color: #5f5fd3;
+} 
+/* footer section end */
+
+/* screen for 992 */
+@media screen and (max-width:992px){
+     
+     
+     .carousel-item .h2{
+         font-size: 40px;
+         font-weight: bold;
+         line-height: 50px;
+        }
+        #carousel1{
+            left: 140px;
+            top: 80px;
+        }
+        
+        #carousel2{
+            left: 100px;
+            top: 100px;
+            text-align: left;
+        }
+        #carousel3{
+            left: 120px;
+            top: 50px;
+            text-align: left;
+        }
+        
+    }
+/* screen for 992 */
+
+/* screen for 768 */
+@media screen and (max-width:768px){
+     
+     
+    .carousel-item .h2{
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 30px;
+       }
+       #carousel1{
+           left: 140px;
+           top: 50px;
+       }
+       
+       #carousel2{
+           left: 140px;
+           top: 70px;
+           text-align: left;
+       }
+       #carousel3{
+           left: 140px;
+           top: 50px;
+           text-align: left;
+       }
+
+       .collaborate .content{
+        position: absolute;
+        text-align: center;
+         top: 20px;
+        color: white;
+        margin-left: 100px;
+        font-size: 15px;
+    }
+    footer{
+
+        margin-left: 150px;
+        margin-right: 150px;
+        padding-top: 20px;
+        padding-left: 50px;
+    }
+    .imagination h1{
+        color: #FF006F;
+        font-size: 40px;
+        font-weight: 800;
+        margin-left: 20px;
+       
+    }
+    .imagination p{
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 20px;
+    }
+    .cravefx .content p{
+        color: white;
+       font-size: 20px;
+       font-weight: 400;
+       margin-left: 10px;
+    
+    }
+    .cravefx .content h1{
+        color: white;
+       font-size: 40px;
+       font-weight: 400;
+       margin-left: 55px;
+         
+    } 
+       
+   }
+/* screen for 768 */
+
+/* screen for 576 */
+@media screen and (max-width:576px){
+     
+     
+    .carousel-item .h2{
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 20px;
+       }
+       #carousel1{
+           left: 140px;
+           top: 35px;
+       }
+       
+       #carousel2{
+           left: 140px;
+           top: 40px;
+           text-align: left;
+       }
+       #carousel3{
+           left: 140px;
+           top: 40px;
+           text-align: left;
+       }
+       
+   }
+/* screen for 576 */

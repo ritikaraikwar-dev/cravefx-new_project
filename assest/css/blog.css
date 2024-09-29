@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+/* banner and navbar section start */
+#btn{
+    padding: 12px 40px;
+    color: white;
+    margin-left: 100px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.5s;
+    background-color: #FF006F;
+}
+#btn:hover{
+    transform: scale(1.1);
+    background-color: #FF006F;
+    color: aliceblue;
+}
+#banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/live-action-vs-animation.png) no-repeat;;
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    
+}
+#banner h1{
+
+    padding-top: 200px;
+    padding-left: 200px;
+    font-size: 50px;
+    font-weight: 600;
+}
+#banner ul li a{
+    font-family: 500;
+    color: white;
+    font-family: 500;
+     
+    font-size: 17px;
+    font-weight: 700;
+    padding-left: 30px;
+}
+.nav-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px; /* Space between text and border */
+    display: inline-block; /* Ensures the link width matches the text */
+    
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px; /* Thickness of the pink border */
+    background-color: #ff007f; /* Pink color */
+    transition:0.5s; /* Smooth transition */
+    box-sizing: border-box; /* Ensure it calculates width and padding correctly */
+}
+
+.nav-link:hover::after {
+
+    width: calc(100% - 39px); /* Adjust width to exclude the padding */
+    left: 30px; /* Offset the starting position to account for padding */
+}
+
+.nav-link:hover {
+    color: #ff007f; /* Optional: Change text color on hover */
+}
+
+.scroll-down{
+    background-color:white;
+    padding: 0;
+}
+.scroll-down .navbar-brand img{
+    width: 80px;
+    }
+
+#banner .scroll-down ul li .nav-link{
+        color: black;
+}  
+
+
+/* offcanvas section start */
+ 
+.offcanvas .offcanvas-header{
+    background-color: #FF006F;
+        
+
+}
+
+/* Custom Offcanvas Styles */
+.bg-pink {
+    background-color: #ff007a; /* Pink color like the one in the screenshot */
+}
+
+.navbar-toggler {
+    border: none; /* Hide border for the menu icon */
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.btn-light {
+    color: #ff007a;
+    font-weight: bold;
+}
+ 
+.offcanvas-body {
+    padding-top: 4rem; /* Adjust padding to position the links correctly */
+    background-color: #FF006F;
+}
+
+.btn-close-white {
+    filter: invert(1); /* White close button */
+}
+
+/* Align the icon and text properly */
+.navbar-brand img {
+    height: auto;
+    width: 120px;
+}
+
+.offcanvas-header {
+    justify-content: flex-end;
+}
+
+.navbar {
+    box-shadow: none;
+}
+
+/* offcanvas section end */
+
+
+/* banner and navbar section end */
+
+
+     
+/* cards section start */
+
+.cards{
+
+    margin: 50px 247px;
+}
+.cards .card-text{
+
+    font-size: 13px;
+}
+/* cards section end */
+
+
+
+
+
+
+
+
+
+/* footer section start */
+footer{
+
+    line-height: 35px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+footer ul li{
+
+     list-style: none;
+     margin-left: -30px;
+}
+footer #menu{
+    color: #FB006F;
+} 
+footer #capb{
+    color: #2626c9;
+} 
+footer #case{
+    color: #5f5fd3;
+} 
+/* footer section end */
+
+
+
+
+/* Extra Small Devices */
+@media (max-width: 576px) {
+
+
+    #banner h1{
+
+        padding-top: 200px;
+        padding-left: 80px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .cards{
+
+        margin: 50px 10px;
+    }
+    footer{
+
+        
+        margin: 100px;
+        
+    }
+    
+     
+}
+
+/* Small Devices */
+@media (min-width: 576px) and (max-width: 768px) {
+
+    #banner h1{
+
+        padding-top: 200px;
+        padding-left: 200px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .cards{
+
+        margin: 50px 120px;
+    }
+    footer{
+
+        
+        margin: 100px;
+        
+    }
+     
+}
+
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    margin-top: 115px; /* Default value */
+}
+
+/* Medium Devices */
+@media (min-width: 768px) and (max-width: 992px) {
+
+    #banner h1{
+
+        padding-top: 200px;
+        padding-left: 200px;
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .cards{
+
+        margin: 50px 20px;
+    }
+    footer{
+
+        
+        margin: 100px;
+        
+    }
+     
+}
+
+/* Large Devices */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .cards{
+
+        margin: 50px 40px;
+    }
+     
+}
+
+/* Extra Large Devices */
+@media (min-width: 1200px) {
+     
+}
+
+ 
